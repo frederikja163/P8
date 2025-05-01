@@ -8,4 +8,4 @@ if [ "$2" ]; then
   cd "$2" || exit
 fi
 
-python "$1"
+python $1
