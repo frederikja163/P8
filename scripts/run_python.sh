@@ -4,4 +4,8 @@ source /P8/pytorchenv/bin/activate
 
 # cd into project root and run python command
 cd /P8/MST-OATD-FORK-P8
-python "$1"
+if [ $# -ge 2]; then
+  cd $2
+fi
+
+python $1

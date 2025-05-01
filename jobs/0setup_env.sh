@@ -8,4 +8,4 @@
 #SBATCH --gres=gpu:1                   # Allocated GPUs
 #SBATCH --time=01:00:00                # Maximum run time
 
-singularity exec --nv --bind ..:/P8 /ceph/container/pytorch/pytorch_25.02.sif /bin/bash /P8/scripts/setupenv.sh
+singularity exec --nv --bind ..:/P8 /ceph/container/pytorch/pytorch_25.02.sif /bin/bash /P8/scripts/setup_env.sh

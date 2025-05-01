@@ -43,3 +43,9 @@
 `sbatch 5train_labels.sh "--dataset tdrive"`
 
 `sbatch 6train_update.sh "--dataset tdrive"`
+
+## Troubleshoot
+
+if virtualenv package is failing in setupenv try
+
+`# reinstall with srun singularity exec --nv /ceph/container/pytorch/pytorch_25.02.sif pip uninstall virtualenv`
