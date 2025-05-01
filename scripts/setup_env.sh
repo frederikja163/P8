@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pip install --user virtualenv
+
 # make python venv based off system packages
 ~/.local/bin/virtualenv --system-site-packages /P8/pytorchenv
 
