@@ -4,6 +4,11 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/MST-OATD-FORK-P8/data" />
+      <excludeFolder url="file://$MODULE_DIR$/MST-OATD-FORK-P8/datasets" />
+      <excludeFolder url="file://$MODULE_DIR$/MST-OATD-FORK-P8/logs" />
+      <excludeFolder url="file://$MODULE_DIR$/MST-OATD-FORK-P8/models" />
+      <excludeFolder url="file://$MODULE_DIR$/MST-OATD-FORK-P8/probs" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.12 (P8)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
