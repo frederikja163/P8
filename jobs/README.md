@@ -44,6 +44,14 @@
 
 `sbatch 6train_update.sh "--dataset tdrive"`
 
+## link jobs
+`sbatch 1preprocess.sh "--dataset tdrive"`
+
+outputs some job id 1234
+
+`sbatch --dependency=1234 2generate_outliers.sh "--dataset tdrive"`
+ 
+
 ## Troubleshoot
 
 if virtualenv package is failing in setupenv try
