@@ -1,0 +1,3 @@
+#!/bin/bash
+
+scancel -u $USER
