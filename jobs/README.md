@@ -32,11 +32,11 @@
 
 ## T-Drive
 
-`sbatch 1preprocess.sh "--dataset tdrive"`
+`sbatch 1preprocess.sh "--dataset tdrive --grid_size 0.3"` grid_size limited by RAM
 
 `sbatch 2generate_outliers.sh "--dataset tdrive"`
 
-`sbatch 3train.sh "--dataset --batch_size 200"` # lower batch_size because a large amount of the memory is reserved for loading the entire dataset (TODO)
+`sbatch 3train.sh "--dataset tdrive --batch_size 200"` batch_size limited by GPU VRAM
 
 `sbatch 4test.sh "--dataset tdrive"`
 
@@ -49,7 +49,7 @@
 
 outputs some job id 1234
 
-`sbatch --dependency=1234 2generate_outliers.sh "--dataset tdrive"`
+`sbatch --dependency=afterok:1234 2generate_outliers.sh "--dataset tdrive"`
  
 
 ## Troubleshoot
