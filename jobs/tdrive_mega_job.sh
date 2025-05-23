@@ -6,7 +6,7 @@ observed_ratios=(0.5 0.7 1.0)
 fractions=(0.1 0.2 0.3)
 distances=(3 2 2)
 
-job1=$(sbatch 1preprocess.sh "--dataset tdrive --grid_size 0.1 --epoch_split 0.3" | awk '{print $4}')
+job1=$(sbatch 1preprocess.sh "--dataset tdrive --grid_size 0.2 --epoch_split 0.3" | awk '{print $4}')
 
 # the following should be run 5 times
 job2=$(sbatch --dependency=afterok:$job1 3train.sh "--dataset tdrive --pretrain_epochs 3 --epochs 4 --batch_size 32" | awk '{print $4}')
